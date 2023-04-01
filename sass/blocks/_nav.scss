@@ -1,0 +1,25 @@
+.nav {}
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+    line-height: 1.9;
+
+    li {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $accent-color;
+            transition: all .3s ease-in;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

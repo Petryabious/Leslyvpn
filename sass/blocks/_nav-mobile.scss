@@ -1,0 +1,11 @@
+.nav-mobile {}
+.nav-mobile__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.9;
+
+    li {
+        font-size: 25px;
+    }
+}

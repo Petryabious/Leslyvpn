@@ -1,0 +1,45 @@
+.plan {
+    padding: 80px 0 75px;
+    background-color: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+    @media (max-width: 900px) {
+        padding: 40px 0 30px;
+    }
+}
+
+.plan__top {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media (max-width: 900px) {
+        margin-bottom: 30px;
+    }
+}
+
+.plan__title {
+    margin-bottom: 20px;
+    @media (max-width: 860px) { 
+        margin-bottom: 10px;
+    }
+}
+.plan__text {
+    max-width: 555px;
+    margin: 0 auto;
+}
+.plan__cards {
+    display: flex;
+    padding: 0 28px; 
+    column-gap: 50px;
+
+    @media (max-width: 1150px) {
+        gap: 10px;
+        padding: 0;
+        
+        justify-content: space-around;
+    }
+    @media (max-width: 860px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+

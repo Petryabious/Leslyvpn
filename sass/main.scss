@@ -1,0 +1,31 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+
+@import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/button-link";
+@import "./blocks/title";
+@import "./blocks/button";
+@import "./blocks/card-plan";
+@import "./blocks/slider-feedback";
+@import "./blocks/social-link";
+@import "./blocks/nav-icon";
+@import "./blocks/page-top";
+@import "./blocks/nav-mobile";
+
+
+// owl-theme
+@import "./owl-theme/owl-theme";
+
+// Sections
+@import "./sections/header";
+@import "./sections/features";
+@import "./sections/plan";
+@import "./sections/network";
+@import "./sections/feedback";
+@import "./sections/subscribe";
+@import "./sections/footer";
