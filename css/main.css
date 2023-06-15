@@ -304,6 +304,10 @@ body > * {
           transform: translateY(0);
 }
 
+a.button {
+  color: #fff;
+}
+
 .card-plan {
   padding: 80px 70px 50px;
   background: #FFFFFF;
