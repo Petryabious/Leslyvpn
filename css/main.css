@@ -740,6 +740,109 @@ a.button {
   font-size: 25px;
 }
 
+.modal-subscribe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
+}
+.modal-subscribe_hidden {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+.modal-subscribe_hidden .modal-portfolio__content {
+  opacity: 0;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
+.modal-subscribe__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+}
+
+.modal-subscribe__content {
+  padding: 40px 20px 30px;
+  max-width: 600px;
+  width: 100%;
+  background: #F8F8F8;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.modal-subscribe__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.form-subscribe {
+  padding-top: 20px;
+}
+
+.form-subscribe__input {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 100%;
+  color: #0B132A;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.form-subscribe__input::-webkit-input-placeholder {
+  color: #4F5665;
+}
+.form-subscribe__input:-ms-input-placeholder {
+  color: #4F5665;
+}
+.form-subscribe__input::-ms-input-placeholder {
+  color: #4F5665;
+}
+.form-subscribe__input::placeholder {
+  color: #4F5665;
+}
+.form-subscribe__input:focus {
+  -webkit-box-shadow: 8px 8px 8px 0px rgba(34, 60, 80, 0.4);
+          box-shadow: 8px 8px 8px 0px rgba(34, 60, 80, 0.4);
+}
+
+.form-subscribe__btn {
+  margin-left: auto;
+}
+.form-subscribe__btn span {
+  padding-left: 5px;
+  font-size: 25px;
+}
+@media (max-width: 430px) {
+  .form-subscribe__btn {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
 /*
  * 	Default theme - Owl Carousel CSS File
  */

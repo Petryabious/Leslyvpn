@@ -99,3 +99,28 @@ footerListTitles.forEach(function(item){
     })
 })
 
+
+
+// modals
+const btnClose = document.querySelector('[data-btn-close]');
+const modal = document.querySelector('[data-modal]');
+const modalContent = document.getElementById('modal-contant');
+const btnSubscribe = document.querySelector('[data-btn-subscribe ]');
+
+function addClassHidden(){
+    modal.classList.add('modal-subscribe_hidden');
+    document.body.classList.remove('lock');
+}
+
+
+modal.addEventListener('click', addClassHidden);
+btnClose.addEventListener('click', addClassHidden);
+
+btnSubscribe.addEventListener('click', function(){
+    modal.classList.remove('modal-subscribe_hidden');
+    document.body.classList.add('lock');
+
+    modalContent.addEventListener('click', (event)=>{
+        event.stopPropagation();
+    })
+})

@@ -435,7 +435,7 @@
 								<p>Let's subscribe with us and find the fun.</p>
 							</div>
 						</div>
-						<button class="button" type="button">Subscribe Now</button>
+						<button data-btn-subscribe class="button" type="button">Subscribe Now</button>
 					</div>
 				</div>
 			</section>
@@ -540,6 +540,26 @@
 			</div>
 			
 		</footer>
+
+		<div data-modal class="modal-subscribe modal-subscribe_hidden">
+			<div class="modal-subscribe__body">
+				<div class="modal-subscribe__content" id="modal-contant">
+
+					<button data-btn-close class="modal-subscribe__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2.82837" width="27.3715" height="4" transform="rotate(45 2.82837 0)" fill="#1A0000"/>
+							<rect x="0.141357" y="19.5566" width="27.3715" height="4" transform="rotate(-45 0.141357 19.5566)" fill="#1A0000"/>
+						</svg>						
+					</button>
+
+					<form action="#!" class="modal-subscribe__form form-subscribe">
+						
+						<input type="email" class="form-subscribe__input" placeholder="Enter your email">
+						<button class="form-subscribe__btn button">Subsribe now <span>&#8594;</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
 
 
 		<script src="./libs/jquery/jquery-3.6.3.min.js"></script>
